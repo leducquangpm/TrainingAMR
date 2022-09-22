@@ -1,0 +1,18 @@
+ python==3.7.10  # Look like this is the only one that does not conflict with prokka 1.14.6
+ ipykernel
+ matplotlib
+ numpy
+ pandas
+ scipy
+ tqdm
+ xlrd
+ biopython
+ pysam
+ bwa
+ samtools==1.10
+ bcftools==1.10
+ skesa==2.4.0
+ prokka==1.14.6
+ mlst==2.19.0
+ abricate==1.0.1
+ parsnp
