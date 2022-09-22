@@ -18,5 +18,5 @@ mamba install -y -c conda-forge -c bioconda -c anaconda -c etetoolkit -c default
 
 ```
 
-
+3. Open jupyter notebook and enjoy!
   
