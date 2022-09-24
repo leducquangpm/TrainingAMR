@@ -35,7 +35,7 @@ docker build -f Dockerfile -t quangld/amrtraining:1.0 .
 2. Start docker container:
 ```bash
 
-docker run -it --network="host" -v /path/to/amrtraining:/misc/amrtraining -w /misc/amrtraining quangld/amrtraining:1.0
+docker run -it --network="host" -v /path/to/TrainingAMR:/misc/amrtraining -w /misc/amrtraining quangld/amrtraining:1.0
 
 ```
 3. Open jupyter notebook inside container and access localhost:8888 on web browser:
