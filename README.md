@@ -38,7 +38,8 @@ docker build -f Dockerfile -t quangld/amrtraining:1.0 .
 docker run -it --network="host" -v /path/to/TrainingAMR:/misc/amrtraining -w /misc/amrtraining quangld/amrtraining:1.0
 
 ```
-3. Open jupyter notebook inside container and access localhost:8888 on web browser:
+3. Clone this repo (or download zip file of repo and unzip to get TraningAMR folder)
+4. Open jupyter notebook inside container and access localhost:8888 on web browser:
 ```bash
 
 jupyter notebook
