@@ -1,5 +1,6 @@
  python==3.7.10  # Look like this is the only one that does not conflict with prokka 1.14.6
  ipykernel
+ jupyter
  matplotlib
  numpy
  pandas
