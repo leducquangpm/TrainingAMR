@@ -1,7 +1,7 @@
 # AMR analysis training
-## Preparation
+## Preparation (Linux)
 1. Clone this repo <br>
-<code> git clone git clone https://github.com/leducquangpm/TrainingAMR.git</code>
+<code> git clone https://github.com/leducquangpm/TrainingAMR.git</code>
 2. Install analysis tools (via conda):
 - Download and install the appropriate conda, such as anaconda from 
    https://repo.anaconda.com/archive/
@@ -17,6 +17,30 @@ source activate amrtraining
 mamba install -y -c conda-forge -c bioconda -c anaconda -c etetoolkit -c defaults  --file requirements.txt
 
 ```
-
 3. Open jupyter notebook and enjoy!
-  
+## Setup on Windows (via docker)
+0. Install docker on Windows (Docker Desktop)
+1. Pull docker image from Docker Hub
+```bash
+
+docker pull quangld/amrtraining:1.0
+
+```
+Or build docker image by yourself:
+```bash
+
+docker build -f Dockerfile -t quangld/amrtraining:1.0 .
+
+```
+2. Start docker container:
+```bash
+
+docker run -it --network="host" -v `pwd`:/misc/amrtraining -w /misc/amrtraining quangld/amrtraining:1.0
+
+```
+3. Open jupyter notebook inside container and access localhost:8888 on web browser:
+```bash
+
+jupyter notebook
+
+```
